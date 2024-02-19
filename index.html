@@ -4,13 +4,105 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Text-Editore</title>
+    <!-- fonts awesome all here  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- fonts awesome all here  -->
     <!--=========== css all link here ========== -->
     <link rel="stylesheet" href="./css/style.css">
     <!--=========== css all link here ========== -->
 </head>
 <body>
     <!--============ text editore part start here =========== -->
-    <div></div>
+    <div class="editor_main">
+        <div class="editore_button">
+            <button id="blod" class="option_btn">
+                <i class="fa-solid fa-bold"></i>
+            </button>
+            <button id="italic" class="option_btn">
+                <i class="fa-solid fa-italic"></i>
+            </button>
+            <button id="underline" class="option_btn">
+                <i class="fa-solid fa-underline"></i>
+            </button>
+            <button id="strikethrough" class="option_btn">
+                <i class="fa-solid fa-strikethrough"></i>
+            </button>
+            <button id="superscript" class="option_btn">
+                <i class="fa-solid fa-superscript"></i>
+            </button>
+            <button id="subscript" class="option_btn">
+                <i class="fa-solid fa-subscript"></i>
+            </button>
+
+
+            <button id="insertorderlist" class="option_btn">
+                <i class="fa-solid fa-list-ol"></i>
+            </button>
+            <button id="insertunorderlist" class="option_btn">
+                <i class="fa-solid fa-list"></i>
+            </button>
+            <button id="rotate_left" class="option_btn">
+                <i class="fa-solid fa-rotate-left"></i>
+            </button>
+            <button id="rotate_right" class="option_btn">
+                <i class="fa-solid fa-rotate-right"></i>
+            </button>
+
+
+            <button id="link" class="option_btn">
+                <i class="fa-solid fa-link"></i>
+            </button>
+            <button id="unlink" class="option_btn">
+                <i class="fa-solid fa-link-slash"></i>
+            </button>
+
+
+            <button id="align_left"  class="option_btn">
+                <i class="fa-solid fa-align-left"></i>
+            </button>
+            <button id="align_center"  class="option_btn">
+                <i class="fa-solid fa-align-center"></i>
+            </button>
+            <button id="align_right"  class="option_btn">
+                <i class="fa-solid fa-align-right"></i>
+            </button>
+            <button id="align_justify"  class="option_btn">
+                <i class="fa-solid fa-align-justify"></i>
+            </button>
+            <button id="indent"  class="option_btn">
+                <i class="fa-solid fa-indent"></i>
+            </button>
+            <button id="outdent"  class="option_btn">
+                <i class="fa-solid fa-outdent"></i>
+            </button>
+
+            <select  id="formatebolock">
+                <div class="adv_option">
+                    <option value="h1">h1</option>
+                    <option value="h2">h2</option>
+                    <option value="h3">h3</option>
+                    <option value="h4">h4</option>
+                    <option value="h5">h5</option>
+                    <option value="h6">h6</option>
+                </div>
+            </select>
+
+
+            <select id="fontname" class="adv_option"></select>
+            <select id="font_size" class="adv_option"></select>
+            <div class="input_color">
+                <input type="color" id="color" class="adv_option">
+                <label for="text_color">Text Color</label>
+            </div>
+            <div class="input_color">
+                <input type="color" id="blackcolor" class="adv_option">
+                <label for="blackcolor">Hilight color</label>
+            </div>
+        </div>
+        <div id="input_text" contenteditable="true">
+
+        </div>
+    </div>
     <!--============ text editore part end here =========== -->
 
 
